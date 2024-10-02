@@ -2,8 +2,8 @@
 Changelog for package ess_imu_driver
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.0.1 (2024-10-02)
+------------------
 * updated launch files, add new .h files for uart & spi
 * port changes from imu_linux_example (auto-detect/initialize IMU model)
 
