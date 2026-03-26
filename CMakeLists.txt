@@ -153,6 +153,12 @@ target_link_libraries(ess_imu_driver_node
   ess_imu_driver_lib
 )
 
+## Copy launch files
+install(DIRECTORY launch/
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+  FILES_MATCHING PATTERN "*.launch"
+)
+
 #############
 ## Install ##
 #############
