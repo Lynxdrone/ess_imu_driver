@@ -160,8 +160,11 @@
     <param name="time_correction" type="int" value="0" />
 
     <!-- Remap topic to /imu/data. -->
-    <remap from="/epson_imu" to="/imu/data"/>
-        <remap from="epson_tempc" to="imu/tempc"/>
+    <!-- <remap from="/epson_imu" to="/imu/data"/> -->
+    <remap from="epson_tempc" to="imu/tempc"/>
+    <remap from="epson_imu/data" to="imu/data"/>
+    <!-- <remap from="/epson_imu/data" to="/imu/data"/> -->
+ 
   </node>
 
   <!-- <node pkg="imu_complementary_filter" type="complementary_filter_node" name="imu_filter" output="screen">
@@ -177,7 +180,6 @@
   </node> -->
 
     <!-- Remap topic to /imu/data. -->
-  <remap from="epson_imu/data" to="imu/data"/>
-	<remap from="epson_tempc" to="imu/tempc"/>
+
 
 </launch>
